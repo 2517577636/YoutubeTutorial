@@ -36,6 +36,20 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--Montserrat);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Montserrat);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -45,6 +59,17 @@ ul{
 .text-gray{
     color: var(--text-gray);
 }
+
+
+button.btn{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
 /* ---------- global classes---------- */
 
 
@@ -128,7 +153,43 @@ ul{
     color: #a1c4cf;
 }
 
-/*------------- navbar------------- */
+/*-------x------ navbar-----x-------- */
+
+
+/* ---------------Main Content--------------- */
+
+/* ------------site-title -------------- */
+main .site-title{
+   display: flex;
+   justify-content: center;
+    height: 110vh;
+    background: url('../assets/Background-image.png') no-repeat 0/cover;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title .site-background h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .site-background .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .site-background .btn:hover{
+    background: transparent;
+    border:1px solid var(--white);
+    color: var(--white);
+}
+
+/* ------x------site-title ---------x----- */
+
+/* -------x--------Main Content--------x------- */
 
 /* ------viewport less than or equal to 750px ------*/
 @media only screen and (max-width: 750px){
