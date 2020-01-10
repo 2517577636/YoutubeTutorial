@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./img/545.jpeg') no-repeat center 0/cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    
+}
+
+#text{
+    font-size: 13rem;
+    text-transform: uppercase;
+    color: white;
+    mask-image: url('./img/bg.jpeg');
+    /* -webkit-mask-image: url("./img/bg.jpeg"); */
+}

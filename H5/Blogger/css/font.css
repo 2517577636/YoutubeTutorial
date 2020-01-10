@@ -1,0 +1,17 @@
+/* font-family: Abel */
+@font-face{
+    font-family: Abel;
+    src: url("../fonts/Abel/Abel-Regular.ttf");
+}
+
+/* font-family: Anton */
+@font-face{
+    font-family: Anton;
+    src: url("../fonts/Anton/Anton-Regular.ttf");
+}
+
+/* font-family: Montserrat */
+@font-face{
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+}
