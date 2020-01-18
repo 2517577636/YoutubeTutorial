@@ -7,6 +7,42 @@ const path = require("path");
 //     console.log("Floder created...");
 // })
 
+//delete floder
+// fs.rmdir(path.resolve(__dirname,"test"), (err)=>{
+//     if(err) throw err;
+//     else{
+//         console.log("成功删除文件夹test！");
+//     }
+// }) 
+
+// read floder
+// fs.readdir(path.resolve(__dirname), (err, files) => {
+//     if(err) throw err;
+//     else{
+//         console.log(`显示当前文件夹下文件：${files}`);
+//     }
+// })
+
+// file exist 
+// note: exists already was abandoned on version 12. and it was instead of
+// existsSync.
+fs.exists(path.resolve(__dirname, "file_demo.js"), (exists)=> {
+    if(exists){
+        console.log("文件存在！");
+    } 
+    else{
+        console.log("文件不存在！");
+    }
+})
+
+// display file information
+// fs.stat(path.resolve(__dirname,"file_demo.js"), (err, stats)=>{
+//     if(err) throw err;
+//     else{
+//         console.log("显示当前文件信息：" + stats);
+//     }
+// })
+
 // Create and write to file
 // fs.writeFile(path.join(__dirname, '/test/hello.txt'), "Hello world!!!", (err)=>{
 //     if(err) throw err;
@@ -55,9 +91,18 @@ const path = require("path");
 
 // Rename File
 // Note: path.parse support the relative path. 
-fs.rename(path.join(__dirname, "/test", "example.txt"), path.join(__dirname, "/test/hello.txt"),
-(err) => {
-    if (err) throw err;
-    console.log(`the file name was changed and the name is : ${path.parse("./test/hello.txt").name}`)
-})
+// fs.rename(path.join(__dirname, "/test", "example.txt"), path.join(__dirname, "/test/hello.txt"),
+// (err) => {
+//     if (err) throw err;
+//     console.log(`the file name was changed and the name is : ${path.parse("./test/hello.txt").name}`)
+// })
+
+// remove File
+// fs.unlink(path.resolve(__dirname,'test','hello.txt'), (err) => {
+//     if(err){
+//         throw err
+//     }else{
+//         console.log('删除成功！');
+//     }
+// })
 
