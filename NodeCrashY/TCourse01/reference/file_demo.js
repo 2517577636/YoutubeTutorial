@@ -26,14 +26,16 @@ const path = require("path");
 // file exist 
 // note: exists already was abandoned on version 12. and it was instead of
 // existsSync.
-fs.exists(path.resolve(__dirname, "file_demo.js"), (exists)=> {
-    if(exists){
-        console.log("文件存在！");
-    } 
-    else{
-        console.log("文件不存在！");
-    }
-})
+//  existsSync return a boolean.
+// fs.exists(path.resolve(__dirname, "file_demo.js"), (exists)=> {
+//     if(exists){
+//         console.log("文件存在！");
+//     } 
+//     else{
+//         console.log("文件不存在！");
+//     }
+// })
+fs.existsSync(path.resolve(__dirname, "file_demo.js"))
 
 // display file information
 // fs.stat(path.resolve(__dirname,"file_demo.js"), (err, stats)=>{
@@ -91,6 +93,7 @@ fs.exists(path.resolve(__dirname, "file_demo.js"), (exists)=> {
 
 // Rename File
 // Note: path.parse support the relative path. 
+// rename is equal to the function mv in the linux.
 // fs.rename(path.join(__dirname, "/test", "example.txt"), path.join(__dirname, "/test/hello.txt"),
 // (err) => {
 //     if (err) throw err;
