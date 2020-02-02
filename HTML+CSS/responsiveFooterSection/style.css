@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open sans",sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --footer-bg: #f1f1f1;
+    --social-media: #001a21;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 3rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container{
+    padding: 3rem 1rem;
+    background: var(--footer-bg);
+}
+
+.footer-container .left-col,.right-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    flex-wrap: wrap;
+}
+
+.footer-container .left-col .logo{
+    width: 12rem;
+    margin: 1rem .6rem;
+}
+
+.footer-container .left-col .social-media{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem .5rem;
+}
+
+.footer-container .left-col .social-media a{
+    font-size: 1.5rem;
+    color: var(--social-media);
+    transition: opacity .6s;
+}
+
+.footer-container .left-col .social-media a:hover{
+    opacity: .6;
+}
+
+.footer-container .right-col h3{
+    padding: 1rem .5rem;
+    font-size: 2rem;
+}
+
+.footer-container .right-col .border{
+    width: 60%;
+    border: 3px solid tomato;
+}
